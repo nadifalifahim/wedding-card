@@ -19,6 +19,9 @@ font-family: 'Updock', cursive;
   --page-7-text-secondary: #ffffff;
   --text-gold-from: #a9800d;
   --text-gold-to: #d8b042;
+}
+
+html {
   font-size: 12px;
 }
 
