@@ -1,0 +1,101 @@
+@media screen and (max-width: 450px) {
+  :root {
+    font-size: 6px;
+  }
+
+  .page-2,
+  .page-3 {
+    height: 50vh;
+  }
+  .page-4 {
+    height: 70vh;
+  }
+
+  .page-5,
+  .page-6,
+  .page-7 {
+    height: 100vh;
+  }
+
+  .page-1 .bg-img {
+    max-height: 70%;
+  }
+
+  .page-3 img {
+    position: absolute;
+    width: 55%;
+  }
+
+  .page-3 img:nth-child(1) {
+    top: 0;
+    left: -1rem;
+  }
+
+  .page-3 img:nth-child(4) {
+    bottom: 0;
+    right: -1rem;
+  }
+
+  .page-3 p {
+    width: 80%;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--text-1);
+    font-family: "Alegreya SC", serif;
+    z-index: 1;
+  }
+
+  .page-4 h1 {
+    font-size: 8rem;
+    padding: 2.5vw 5vw;
+    margin: 0px auto 0px auto;
+    line-height: 8rem;
+  }
+
+  .page-4 p {
+    max-width: 95%;
+  }
+
+  .page-4 p:nth-child(3) {
+    margin: -50px 0px -20px 0;
+  }
+
+  .page-5 .heading h1,
+  .page-6 .heading h1,
+  .page-7 .heading h1 {
+    font-size: 11rem;
+    padding: 40px 0px;
+  }
+
+  .page-5 .flower-container img:nth-child(1),
+  .page-5 .flower-container img:nth-child(2) {
+    width: 35%;
+  }
+
+  .page-6 .flower-container img:nth-child(1),
+  .page-6 .flower-container img:nth-child(2) {
+    width: 100%;
+  }
+
+  .page-6 .flower-container img:nth-child(1) {
+    left: 0;
+    top: 0;
+    transform: rotate(0deg) translateX(0%) translateY(0%);
+  }
+
+  .page-6 .flower-container img:nth-child(2) {
+    bottom: 0;
+    right: 0;
+    transform: rotate(0deg) translateX(0%) translateY(0%);
+  }
+
+  .page-5 .date-time .day,
+  .page-5 .date-time .time,
+  .page-6 .date-time .day,
+  .page-6 .date-time .time,
+  .page-7 .date-time .day,
+  .page-7 .date-time .time {
+    font-size: 3.5rem;
+    padding: 0px 10px;
+  }
+}
