@@ -14,3 +14,12 @@ function music_btn_pressed() {
 function play_music() {
   bg_music.play();
 }
+
+window.addEventListener("scroll", () => {
+  let scrollPosition = window.scrollY;
+  console.log(scrollPosition);
+
+  if (scrollPosition > 0) {
+    play_music();
+  }
+});
