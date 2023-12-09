@@ -65,7 +65,7 @@
       <button onclick="music_btn_pressed()">
         <img
           id="music-icon"
-          src="Resources/background music/music_status/play.png"
+          src="./Resources/background music/music_status/play.png"
           alt="Pause"
         />
       </button>
@@ -73,7 +73,11 @@
 
     <!-- Page 1 -->
     <section class="page-1">
-      <img class="bg-img" src="Resources/images/page-1/bg-element.png" alt="" />
+      <img
+        class="bg-img"
+        src="./Resources/images/page-1/bg-element.png"
+        alt=""
+      />
       <div class="text-container-bg">
         <div class="text-container">
           <h1>Faiza</h1>
@@ -85,7 +89,7 @@
 
     <!-- Page 2 -->
     <section class="page-2">
-      <img src="Resources/images/page-2/Frame.png" alt="" />
+      <img src="./Resources/images/page-2/Frame.png" alt="" />
       <p>
         “ In the name of Allah, <br />the most beneficient and the most merciful
         ”
@@ -94,13 +98,13 @@
 
     <!-- Page 3 -->
     <section class="page-3">
-      <img src="Resources/images/page-1/bg-element.png" alt="" />
+      <img src="./Resources/images/page-1/bg-element.png" alt="" />
       <span></span>
       <p>
         We earnestly request you to honor us with your presence as our families
         come together to celebrate this joyous occasion to unite...
       </p>
-      <img src="Resources/images/page-1/bg-element.png" alt="" />
+      <img src="./Resources/images/page-1/bg-element.png" alt="" />
     </section>
 
     <!-- Page 4 -->
@@ -115,8 +119,8 @@
     <!-- Page 5 -->
     <section class="page-5">
       <div class="flower-container">
-        <img src="Resources/images/page-5/Flower 1 1.png" alt="" />
-        <img src="Resources/images/page-5/Flower 1 1.png" alt="" />
+        <img src="./Resources/images/page-5/Flower 1 1.png" alt="" />
+        <img src="./Resources/images/page-5/Flower 1 1.png" alt="" />
       </div>
       <div class="heading">
         <h1>Holud</h1>
@@ -147,8 +151,8 @@
     <!-- Page 6 -->
     <section class="page-6">
       <div class="flower-container">
-        <img src="Resources/images/page-6/flower.png" alt="" />
-        <img src="Resources/images/page-6/flower.png" alt="" />
+        <img src="./Resources/images/page-6/flower.png" alt="" />
+        <img src="./Resources/images/page-6/flower.png" alt="" />
       </div>
       <div class="heading">
         <h1 class="gold-text">Wedding Ceremony</h1>
@@ -199,8 +203,13 @@
     </section>
 
     <!-- Audio Config -->
-    <audio loop autoplay id="bg-music">
-      <source src="Resources/background music/bg_music.mp3" type="audio/mpeg" />
+    <audio
+      id="bg-music"
+      loop
+      autoplay
+      src="./Resources/background music/bg_music.mp3"
+      type="audio/mpeg"
+    >
       Your browser does not support the audio element.
     </audio>
   </body>
