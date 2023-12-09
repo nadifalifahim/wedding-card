@@ -265,11 +265,16 @@ a {
 
 .page-4 h1 {
   font-family: "MonteCarlo", cursive;
-  font-size: 12.5rem;
+  font-size: 11rem;
   font-weight: 400;
-  padding: 0px 100px;
-  margin: -30px auto -50px auto;
+  padding: 2vw 100px;
+  margin: -2vw auto -2vw auto;
   line-height: 15rem;
+}
+
+.page-4 p:nth-child(2),
+.page-4 p:nth-child(5) {
+  margin: 0vw auto 0vw auto;
 }
 
 .page-4 p:nth-child(3) {
@@ -288,6 +293,7 @@ a {
   position: absolute;
   width: 15%;
   height: auto;
+  z-index: 1;
 }
 
 .page-5 .flower-container img:nth-child(1) {
@@ -429,6 +435,13 @@ a {
   font-size: 2rem;
   text-align: center;
   text-transform: lowercase;
+  z-index: 0;
+  transition: z-index 1s ease;
+}
+
+.page-5 .address p:hover {
+  z-index: 1;
+  background-color: var(--page-5-bg);
 }
 
 /* Page 6 */
