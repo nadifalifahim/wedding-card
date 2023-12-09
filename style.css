@@ -9,32 +9,32 @@ font-family: 'Updock', cursive;
 
 @font-face {
   font-family: "Adamina";
-  src: url("/Resources/fonts/Adamina-Regular.ttf");
+  src: url("./Resources/fonts/Adamina-Regular.ttf");
 }
 
 @font-face {
   font-family: "Alegreya Sans SC";
-  src: url("/Resources/fonts/AlegreyaSansSC-Regular.ttf");
+  src: url("./Resources/fonts/AlegreyaSansSC-Regular.ttf");
 }
 
 @font-face {
   font-family: "Alegreya SC";
-  src: url("/Resources/fonts/AlegreyaSC-Regular.ttf");
+  src: url("./Resources/fonts/AlegreyaSC-Regular.ttf");
 }
 
 @font-face {
   font-family: "MonteCarlo";
-  src: url("/Resources/fonts/MonteCarlo-Regular.ttf");
+  src: url("./Resources/fonts/MonteCarlo-Regular.ttf");
 }
 
 @font-face {
   font-family: "Rochester";
-  src: url("/Resources/fonts/Rochester-Regular.ttf");
+  src: url("./Resources/fonts/Rochester-Regular.ttf");
 }
 
 @font-face {
   font-family: "Updock";
-  src: url("/Resources/fonts/Updock-Regular.ttf");
+  src: url("./Resources/fonts/Updock-Regular.ttf");
 }
 
 :root {
