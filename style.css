@@ -488,7 +488,7 @@ a {
   z-index: 2;
   position: absolute;
   width: 1000px;
-  max-width: 100%;
+  max-width: 60%;
   height: auto;
 }
 
@@ -540,4 +540,28 @@ a {
 .page-7 .date-time .date p:nth-child(1),
 .page-7 .date-time .date p:nth-child(3) {
   color: var(--page-7-text-secondary);
+}
+
+.card-container {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.page-4,
+.page-5,
+.page-6,
+.page-7 {
+  scroll-snap-align: start;
+}
+
+.card-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.card-container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }

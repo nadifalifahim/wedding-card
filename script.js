@@ -18,8 +18,4 @@ function play_music() {
 window.addEventListener("scroll", () => {
   let scrollPosition = window.scrollY;
   console.log(scrollPosition);
-
-  if (scrollPosition > 0) {
-    play_music();
-  }
 });
