@@ -84,4 +84,8 @@
   .page-7 .address p {
     font-size: 3rem;
   }
+  .page-6 .flower-container img:nth-child(1),
+  .page-6 .flower-container img:nth-child(2) {
+    max-width: 100%;
+  }
 }
