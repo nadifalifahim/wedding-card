@@ -124,8 +124,9 @@
   }
 
   .page-7 .stars {
-    max-width: 70%;
+    min-width: 100%;
     position: absolute;
     z-index: -1;
+    opacity: 50%;
   }
 }
