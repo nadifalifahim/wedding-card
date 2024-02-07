@@ -3,9 +3,18 @@
     font-size: 6px;
   }
 
+  body {
+    max-width: 100vw;
+  }
+
+  .page-2 {
+    align-items: center;
+    justify-content: center;
+  }
+
   .page-2,
   .page-3 {
-    height: 50vh;
+    height: 30vh;
   }
   .page-4 {
     height: 70vh;
@@ -21,13 +30,27 @@
     max-height: 70%;
   }
 
-  .page-3 img {
+  .page-3-phone-img-1,
+  .page-3-phone-img-2 {
+    display: inline;
     position: absolute;
     width: 55%;
+    overflow: visible;
+    z-index: 1000;
+  }
+
+  .page-3-phone-img-1 {
+    top: 152vh;
+    left: -27%;
+  }
+
+  .page-3-phone-img-2 {
+    top: 215vh;
+    right: -27%;
   }
 
   .page-3 img:nth-child(1) {
-    top: 0;
+    top: 0rem;
     left: -1rem;
   }
 
@@ -108,5 +131,11 @@
   .page-6 .flower-container img:nth-child(1),
   .page-6 .flower-container img:nth-child(2) {
     max-width: 100%;
+  }
+
+  .page-7 .stars {
+    max-width: 100%;
+    position: absolute;
+    z-index: -1;
   }
 }

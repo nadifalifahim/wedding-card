@@ -75,6 +75,12 @@ body {
   scrollbar-width: none; /* Firefox */
 }
 
+.body-container {
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
 .music-control {
   position: fixed;
   bottom: 40px;
@@ -125,11 +131,30 @@ a {
 .page-7 {
   position: relative;
   width: 100%;
-  height: 100vh;
   display: flex;
+}
+
+.page-1,
+.page-4,
+.page-5,
+.page-6,
+.page-7 {
+  height: 100vh;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+}
+
+.page-3 {
+  z-index: -100;
+  height: 50vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-2 {
+  height: 70vh;
+  align-items: center;
+  justify-content: end;
 }
 
 .page-1,
@@ -243,36 +268,48 @@ a {
   width: 50%;
 }
 
-.page-3 img:nth-child(1) {
-  z-index: 1;
-  animation: rotation-page-3-1 50s infinite linear;
+.page-3-phone-img-1,
+.page-3-phone-img-2 {
+  display: inline;
+  position: absolute;
+  width: 30%;
+  overflow: visible;
+  z-index: 1000;
 }
 
-.page-3 img:nth-child(4) {
-  z-index: 1;
-  animation: rotation-page-3-2 55s infinite linear;
+.page-3-phone-img-1 {
+  top: 140vh;
+  left: -15%;
 }
 
-@keyframes rotation-page-3-1 {
+.page-3-phone-img-2 {
+  top: 190vh;
+  right: -15%;
+}
+
+.page-3-phone-img-1 {
+  animation: rotation-page-3-phone-1 55s infinite linear;
+}
+
+.page-3-phone-img-2 {
+  animation: rotation-page-3-phone-2 55s infinite linear;
+}
+
+@keyframes rotation-page-3-phone-1 {
   from {
-    transform: rotate(0deg) translateX(-51%);
-    transform-origin: 0% 49%;
+    transform: rotate(359deg);
   }
-
   to {
-    transform: rotate(359deg) translateX(-51%);
-    transform-origin: 0% 49%;
+    transform: rotate(0deg);
   }
 }
 
-@keyframes rotation-page-3-2 {
+@keyframes rotation-page-3-phone-2 {
   from {
-    transform: rotate(0deg) translateX(52%);
-    transform-origin: 100% 49%;
+    transform: rotate(0deg);
   }
   to {
-    transform: rotate(359deg) translateX(52%);
-    transform-origin: 100% 49%;
+    transform: rotate(359deg);
   }
 }
 
@@ -466,6 +503,7 @@ a {
 .page-6 .address p,
 .page-7 .address p {
   font-size: 2rem;
+  max-width: 95%;
   text-align: center;
   text-transform: lowercase;
   z-index: 0;
@@ -540,4 +578,71 @@ a {
 .page-7 .date-time .date p:nth-child(1),
 .page-7 .date-time .date p:nth-child(3) {
   color: var(--page-7-text-secondary);
+}
+
+.page-7 .stars {
+  max-width: 50%;
+  position: absolute;
+  z-index: -1;
+}
+
+.page-7 .stars-1 {
+  bottom: 0%;
+  left: 0%;
+  opacity: 100%;
+}
+
+.page-7 .stars-2 {
+  bottom: 0%;
+  right: 0%;
+  opacity: 100%;
+}
+.page-7 .stars-3 {
+  top: 0%;
+  right: 0%;
+  opacity: 60%;
+}
+
+.page-7 .stars-4 {
+  top: 0%;
+  left: 0%;
+  opacity: 60%;
+}
+
+/* Break config */
+
+.break-golden-orange {
+  width: 100%;
+  height: 30vh;
+  background: rgb(255, 252, 248);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 252, 248, 1) 0%,
+    rgba(255, 248, 248, 1) 100%
+  );
+}
+
+.break-orange-white {
+  width: 100%;
+  height: 30vh;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 248, 248, 1) 100%
+  );
+}
+
+.break-ombre-blue {
+  width: 100%;
+  height: 100vh;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(238, 145, 107, 1) 24%,
+    rgba(164, 73, 114, 1) 58%,
+    rgba(50, 26, 60, 1) 91%,
+    rgba(1, 24, 46, 1) 100%
+  );
 }
