@@ -363,18 +363,30 @@ a {
 
 /* Page 5 */
 
+.page-5 .holud-flowers {
+  z-index: 10;
+  max-width: 100%;
+}
+.page-5 .holud-flowers-2 {
+  z-index: 10;
+  max-width: 100%;
+  transform: scaleX(-1);
+}
+
 .page-5 .flower-container img:nth-child(1),
 .page-5 .flower-container img:nth-child(2) {
   position: absolute;
-  width: 15%;
+  width: 10%;
   height: auto;
   z-index: 1;
+  opacity: 90%;
 }
 
 .page-5 .flower-container img:nth-child(1) {
-  bottom: 0;
-  left: 0;
-  animation: flower-animate-1 5s infinite linear;
+  bottom: 0rem;
+  left: 5rem;
+  animation: flower-animate-1 10s infinite ease-in-out;
+  transform-origin: bottom center;
 }
 
 @keyframes flower-animate-1 {
@@ -382,13 +394,13 @@ a {
     transform: rotate(0deg);
   }
   25% {
-    transform: rotate(-2deg);
+    transform: rotate(2deg);
   }
   50% {
     transform: rotate(0deg);
   }
   75% {
-    transform: rotate(2deg);
+    transform: rotate(-2deg);
   }
   100% {
     transform: rotate(0deg);
@@ -396,26 +408,28 @@ a {
 }
 
 .page-5 .flower-container img:nth-child(2) {
-  top: 0;
-  right: 0;
+  top: -23rem;
+  right: 5rem;
+  transform-origin: bottom center;
   animation: flower-animate-2 5s infinite linear;
+  transform: scaleY(-1);
 }
 
 @keyframes flower-animate-2 {
   0% {
-    transform: rotate(180deg);
+    transform: scaleY(-1) rotate(0deg);
   }
   25% {
-    transform: rotate(182deg);
+    transform: scaleY(-1) rotate(2deg);
   }
   50% {
-    transform: rotate(180deg);
+    transform: scaleY(-1) rotate(0deg);
   }
   75% {
-    transform: rotate(178deg);
+    transform: scaleY(-1) rotate(-2deg);
   }
   100% {
-    transform: rotate(180deg);
+    transform: scaleY(-1) rotate(0deg);
   }
 }
 
@@ -526,27 +540,6 @@ a {
   font-family: "MonteCarlo", cursive;
 }
 
-.page-6 .flower-container img:nth-child(1),
-.page-6 .flower-container img:nth-child(2) {
-  z-index: 2;
-  position: absolute;
-  width: 1000px;
-  max-width: 60%;
-  height: auto;
-}
-
-.page-6 .flower-container img:nth-child(1) {
-  left: 0;
-  top: 0;
-  transform: rotate(-30deg) translateX(-20%) translateY(-50%);
-}
-
-.page-6 .flower-container img:nth-child(2) {
-  bottom: 0;
-  right: 0;
-  transform: rotate(-30deg) translateX(20%) translateY(50%);
-}
-
 .page-6 .date-time .day,
 .page-6 .date-time .time {
   border-top: 2px solid var(--text-1);
@@ -560,18 +553,44 @@ a {
   justify-content: center;
 }
 
-.page-6 .flower-top {
-  max-width: 100%;
+.page-6 .flower-container {
   position: absolute;
-  top: -7%;
+  top: -8rem;
   z-index: 2;
+  max-width: 100%;
+}
+
+.page-6 .flower-top {
+  position: relative;
+  width: 100%;
 }
 
 .page-6 .lamp {
   position: absolute;
-
   transform-origin: 50% 0%;
   z-index: 1;
+}
+
+.page-6 .lamp-1 {
+  max-width: 7%;
+  top: 15%;
+  right: 18%;
+  animation: lamp-anim-1 5s infinite ease-in-out;
+}
+
+.page-6 .lamp-2 {
+  max-width: 4%;
+  top: 20%;
+  left: 22%;
+  animation: lamp-anim-2 4s infinite ease-in-out;
+}
+
+.page-6 .side-flower-1 {
+  max-width: 300px;
+  position: absolute;
+  bottom: 0;
+  right: 2rem;
+  z-index: 2;
 }
 
 @keyframes lamp-anim-1 {
@@ -610,28 +629,6 @@ a {
   }
 }
 
-.page-6 .lamp-1 {
-  max-width: 7%;
-  top: 0%;
-  right: 18%;
-  animation: lamp-anim-1 5s infinite ease-in-out;
-}
-
-.page-6 .lamp-2 {
-  max-width: 4%;
-  top: 3%;
-  left: 22%;
-  animation: lamp-anim-2 4s infinite ease-in-out;
-}
-
-.page-6 .side-flower-1 {
-  max-width: 30%;
-  position: absolute;
-  bottom: 0;
-  right: 2rem;
-  z-index: 2;
-}
-
 /* Page 7 */
 
 .page-7 .heading h1 {
@@ -658,7 +655,8 @@ a {
 }
 
 .page-7 .stars {
-  max-width: 50%;
+  max-width: 60%;
+  min-height: 50%;
   position: absolute;
   z-index: -1;
   overflow: hidden;

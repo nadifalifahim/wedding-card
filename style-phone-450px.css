@@ -90,26 +90,44 @@
     padding: 40px 0px;
   }
 
+  .page-5 .holud-flowers {
+    transform: translateY(-10rem);
+  }
+  .page-5 .holud-flowers-2 {
+    transform: translateY(25rem);
+  }
+
   .page-5 .flower-container img:nth-child(1),
   .page-5 .flower-container img:nth-child(2) {
-    width: 35%;
+    width: 30%;
   }
 
-  .page-6 .flower-container img:nth-child(1),
-  .page-6 .flower-container img:nth-child(2) {
-    width: 100%;
+  .page-5 .flower-container img:nth-child(2) {
+    top: -20rem;
+    right: 0rem;
   }
 
-  .page-6 .flower-container img:nth-child(1) {
-    left: 0;
-    top: 0;
-    transform: rotate(0deg) translateX(0%) translateY(0%);
+  .page-5 .flower-container img:nth-child(1) {
+    bottom: 0rem;
+    left: 10rem;
   }
 
-  .page-6 .flower-container img:nth-child(2) {
-    bottom: 0;
-    right: 0;
-    transform: rotate(0deg) translateX(0%) translateY(0%);
+  @keyframes flower-animate-1 {
+    0% {
+      transform: rotate(-42deg);
+    }
+    25% {
+      transform: rotate(-40deg);
+    }
+    50% {
+      transform: rotate(-42deg);
+    }
+    75% {
+      transform: rotate(-40deg);
+    }
+    100% {
+      transform: rotate(-42deg);
+    }
   }
 
   .page-5 .date-time .day,
@@ -128,15 +146,42 @@
     font-size: 3rem;
   }
 
-  .page-6 .flower-container img:nth-child(1),
-  .page-6 .flower-container img:nth-child(2) {
-    max-width: 100%;
+  .page-6 .flower-container {
+    top: 20rem;
+    transform: scale(1.5);
+  }
+
+  .page-6 .side-flower-1 {
+    max-width: 200px;
+    position: absolute;
+    bottom: 2rem;
+    right: 0;
+    z-index: 2;
+  }
+
+  .page-6 .lamp-1 {
+    max-width: 12%;
+    top: 15%;
+    right: 18%;
+  }
+
+  .page-6 .lamp-2 {
+    max-width: 7%;
+    top: 20%;
+    left: 22%;
   }
 
   .page-7 .stars {
-    min-width: 200%;
+    max-width: 70%;
     position: absolute;
     z-index: -1;
     opacity: 50%;
+  }
+  .break-golden-orange {
+    height: 20vh;
+  }
+
+  .break-orange-white {
+    height: 20vh;
   }
 }
