@@ -187,6 +187,30 @@
     opacity: 50%;
   }
 
+  .page-5 .holud-flowers img:nth-child(2) {
+    position: absolute;
+    width: 15rem;
+    height: auto;
+    z-index: 1;
+    opacity: 90%;
+    top: -15%;
+    right: 0rem;
+    transform-origin: bottom center;
+    animation: flower-animate-2 5s infinite linear;
+    transform: scaleY(-1);
+  }
+
+  .page-5 .flower-container img:nth-child(1) {
+    width: 15rem;
+    bottom: -10rem;
+    left: 0rem;
+  }
+
+  .page-5 .flower-container img:nth-child(1) {
+    bottom: 0rem;
+    left: 10rem;
+  }
+
   .page-5 .flower-container img:nth-child(1),
   .page-5 .flower-container img:nth-child(2) {
     width: 20rem;
