@@ -3,6 +3,65 @@
     font-size: 8px;
   }
 
+  .page-1 .text-container {
+    position: absolute;
+    width: 35rem;
+    height: 35rem;
+    border-radius: 50%;
+    background-color: var(--bg-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-1);
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* padding: 0 10rem; */
+  }
+
+  .page-1 .text-container h1:nth-child(1),
+  .page-1 .text-container h1:nth-child(3) {
+    position: absolute;
+
+    margin: 0px;
+    padding: 0px;
+    margin-right: 1.5rem;
+    margin-left: 1.1rem;
+    font-family: "MonteCarlo", cursive;
+    font-weight: 400;
+  }
+
+  .page-1 .text-container h1:nth-child(1) {
+    top: 1rem;
+    left: 5rem;
+    font-size: 12rem;
+  }
+
+  .page-1 .text-container h1:nth-child(3) {
+    bottom: 1rem;
+    right: 7rem;
+    font-size: 11rem;
+  }
+
+  .page-1 .text-container h1:nth-child(2) {
+    position: absolute;
+    font-size: 22rem;
+    margin: 0px;
+    top: 1rem;
+    left: 33%;
+    padding: 0px;
+    font-family: "Updock", cursive;
+    font-weight: 200;
+    opacity: 15%;
+    padding: 0;
+  }
+
+  .page-1 .text-container {
+    transform: scale(1.1);
+  }
+
   .page-2 {
     align-items: center;
     justify-content: center;
@@ -68,10 +127,16 @@
   /* Page 5, 6, 7 */
 
   .page-5 .heading h1,
-  .page-6 .heading h1,
   .page-7 .heading h1 {
     font-size: 11rem;
     padding: 40px 0px;
+  }
+
+  .page-6 .heading h1 {
+    font-size: 11rem;
+    max-width: 70%;
+    padding: 40px 0px;
+    text-align: center;
   }
 
   .page-5 .date-time .day,
@@ -104,14 +169,14 @@
   }
 
   .page-6 .lamp-1 {
-    max-width: 12%;
-    top: 15%;
+    max-width: 10%;
+    bottom: -7rem;
     right: 18%;
   }
 
   .page-6 .lamp-2 {
-    max-width: 7%;
-    top: 20%;
+    max-width: 6%;
+    bottom: -2rem;
     left: 22%;
   }
 
